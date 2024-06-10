@@ -1,0 +1,11 @@
+.DS_Store
+local-cdn/
+
+venv/
+node_modules/
+*.sqlite3
+__pycache__/
+
+logs
+*.log
+npm-debug.log*
