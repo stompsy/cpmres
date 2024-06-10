@@ -1,0 +1,10 @@
+{
+	"scripts": {
+		"dev": "tailwindcss -i src/static/src/tailwind-input.css -o src/static/css/cpmres-ui.css --watch"
+	},
+	"devDependencies": {
+		"@tailwindcss/forms": "^0.5.7",
+		"@tailwindcss/typography": "^0.5.13",
+		"tailwindcss": "^3.4.4"
+	}
+}
