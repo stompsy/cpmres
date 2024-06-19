@@ -1,0 +1,11 @@
+{
+    "prettier.enable": false,
+    "editor.defaultFoldingRangeProvider": "ms-python.black-formatter",
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "prettier.jsxSingleQuote": true,
+    "prettier.singleQuote": true,
+    "javascript.preferences.quoteStyle": "single",
+    "typescript.preferences.quoteStyle": "single",
+    "html.completion.attributeDefaultValue": "singlequotes",
+    "markdown.preview.typographer": true
+}
