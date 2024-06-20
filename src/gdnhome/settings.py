@@ -49,7 +49,10 @@ INSTALLED_APPS = [
     "django_browser_reload",
     # My apps
     "directory.apps.DirectoryConfig",
+    "users.apps.UsersConfig",
 ]
+
+AUTH_USER_MODEL = "users.CustomUser"
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -121,7 +124,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = "en-us"
 
-TIME_ZONE = "UTC"
+TIME_ZONE = "America/Los_Angeles"
 
 USE_I18N = True
 
