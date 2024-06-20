@@ -8,16 +8,14 @@
 		{% include 'head/css.html' %}
 	</head>
 	<body class="dark:bg-gray-900">
-	<div>
-    	{% block navbar %}
-    	{% endblock navbar %}
-    </div>
-	<div class="relative">
-		{% block content %}
-		{% endblock content %}
-	</div>
-	<div>
-    	{% include 'head/js.html' %}
-	</div>
+		<div>
+			{% block navbar %}
+			{% endblock navbar %}
+		</div>
+		<div class="relative">
+			{% block content %}
+			{% endblock content %}
+		</div>
+	{% include 'head/js.html' %}
 	</body>
 </html>
