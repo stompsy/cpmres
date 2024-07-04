@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     # 3rd party apps
     "django_browser_reload",
+    "phonenumber_field",
     # My apps
     "directory.apps.DirectoryConfig",
     "users.apps.UsersConfig",

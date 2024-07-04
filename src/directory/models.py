@@ -42,9 +42,6 @@ class AgencyTag(models.Model):
     def __str__(self):
         return self.name
 
-    def get_absolute_url(self):
-        return reverse("agencytag-detail", args=[str(self.id)])
-
     class Meta:
         constraints = [
             UniqueConstraint(
@@ -88,17 +85,13 @@ class Agency(models.Model):
         ordering = ["name"]
 
     def display_type(self):
-        return ", ".join([type.name for type in self.type.all()[:3]])
-
-    display_type.short_description = "Type"
+        return self.type.all()
 
     def display_tag(self):
-        return ", ".join([tag.name for tag in self.tag.all()[:3]])
-
-    display_tag.short_description = "Tag"
+        return self.tag.all()
 
     def get_absolute_url(self):
-        return reverse("agency-detail", args=[str(self.id)])
+        return reverse("agency_detail", args=[str(self.id)])
 
     def __str__(self):
         return self.name
@@ -195,12 +188,12 @@ class Provider(models.Model):
         ordering = ["last_name", "first_name"]
 
     def display_type(self):
-        return ", ".join([type.name for type in self.type.all()[:3]])
+        return self.type.all()
 
     display_type.short_description = "Type"
 
     def display_tag(self):
-        return ", ".join([tag.name for tag in self.tag.all()[:3]])
+        return self.tag.all()
 
     display_tag.short_description = "Tag"
 

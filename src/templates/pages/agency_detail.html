@@ -1,0 +1,338 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Agency Detail{% endblock title %}
+
+{% block content %}
+<nav class="flex pb-4" aria-label="Breadcrumb">
+	<ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
+		<li class="inline-flex items-center">
+		<a href="#" class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white">
+			<svg class="w-3 h-3 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+				<path d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"/>
+			</svg>
+			Home
+		</a>
+		</li>
+		<li>
+		<div class="flex items-center">
+			<svg class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+				<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+			</svg>
+			<a href="#" class="ms-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ms-2 dark:text-gray-400 dark:hover:text-white">Projects</a>
+		</div>
+		</li>
+		<li aria-current="page">
+		<div class="flex items-center">
+			<svg class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+				<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+			</svg>
+			<span class="ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400">Flowbite</span>
+		</div>
+		</li>
+	</ol>
+</nav>
+
+<div class="flex md:flex-wrap w-full md: gap-4">
+	<div class="w-full">
+		<div class="w-full mb-4 p-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+			<div class="flex flex-col justify-start">
+				<div class="w-full max-w-3xl mx-auto">
+									
+					<!-- Vertical Timeline #1 -->
+					<div class="-my-6">
+
+						<!-- Item -->
+						<div class="relative pl-8 sm:pl-32 py-6 group">
+							<!-- Purple label -->
+							<div class="font-medium text-indigo-400 mb-1 sm:mb-0">The origin</div>
+							<!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
+							<div class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-emerald-700 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
+								<time class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-gray-600 bg-green-100 rounded-full">Jan, 2019</time>
+								<div class="text-xl font-bold text-gray-200">Community Paramedic Program pilot begins</div>
+							</div>
+							<!-- Content -->
+							<div class="text-gray-400">In late 2018, Port Angeles Fire Department (PAFD) took a “leap of faith” and moved forward with implementing a pilot 
+								Community Paramedicine program. The intent of the pilot program was to proactively address gaps in the health &amp; social services system by 
+								utilizing an existing Firefighter/Paramedic FTE from within PAFD for a one-year period beginning January 2019.
+							</div>
+						</div>
+						
+						<!-- Item -->
+						<div class="relative pl-8 sm:pl-32 py-6 group">
+							<!-- Purple label -->
+							<div class="font-medium text-indigo-400 mb-1 sm:mb-0">Grant funding</div>
+							<!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
+							<div class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-emerald-700 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
+								<time class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-gray-600 bg-green-100 rounded-full">Jan, 2021</time>
+								<div class="text-xl font-bold text-gray-200">Hargrove Grant funding</div>
+							</div>
+							<!-- Content -->
+							<div class="text-gray-400">In the 2005 Washington State legislative session, Senator Hargrove passed the Omnibus Mental Health and Substance Abuse 
+								Reform Act SB 563 to expand substance abuse and mental health treatment. The bill allows local governments to increase a sales tax to improve 
+								local services. In March 2006, the Clallam County Board of Commissioners (BOCC) approved an ordinance authorizing a 1/10th of one percent sales 
+								and use tax. This sales and use tax is known as the Behavioral Health Tax or BH Tax.
+							</div>
+						</div>
+						
+						<!-- Item -->
+						<div class="relative pl-8 sm:pl-32 py-6 group">
+							<!-- Purple label -->
+							<div class="font-medium text-indigo-400 mb-1 sm:mb-0">Grant funding</div>
+							<!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
+							<div class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-emerald-700 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
+								<time class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-gray-600 bg-green-100 rounded-full">Feb, 2021</time>
+								<div class="text-xl font-bold text-gray-200">PAFD &amp; North Olympic Healthcare Network partner</div>
+							</div>
+							<!-- Content -->
+							<div class="text-gray-400">
+								The Port Angeles Community Paramedicine program received funding to provide medical and social services through 2023. A memorandum of agreement 
+								with North Olympic Healthcare Network (NOHN) was signed allowing for extension of the pilot program that already provides a range of services 
+								to heavy users of the 9-1-1 system. NOHN will use grant funding to provide up to $220,000 annually to support two full-time community paramedics 
+								through the end of 2023, according to the proposal.
+							</div>
+						</div>
+
+						<!-- Item -->
+						<div class="relative pl-8 sm:pl-32 py-6 group">
+							<!-- Purple label -->
+							<div class="font-medium text-indigo-400 mb-1 sm:mb-0">Milestone</div>
+							<!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
+							<div class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-emerald-700 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
+								<time class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-gray-600 bg-green-100 rounded-full">Jan, 2021</time>
+								<div class="text-xl font-bold text-gray-200">Second CPM hired</div>
+							</div>
+							<!-- Content -->
+							<div class="text-gray-400">Brian Gerdes hired as a Community Paramedic</div>
+						</div>
+						
+						<!-- Item -->
+						<div class="relative pl-8 sm:pl-32 py-6 group">
+							<!-- Purple label -->
+							<div class="font-medium text-indigo-400 mb-1 sm:mb-0">Milestone</div>
+							<!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
+							<div class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-emerald-700 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
+								<time class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-gray-600 bg-green-100 rounded-full">Jun, 2021</time>
+								<div class="text-xl font-bold text-gray-200">Third CPM hired</div>
+							</div>
+							<!-- Content -->
+							<div class="text-gray-400">Kristin Fox hired as a Community Paramedic</div>
+						</div>
+						
+						<!-- Item -->
+						<div class="relative pl-8 sm:pl-32 py-6 group">
+							<!-- Purple label -->
+							<div class="font-medium text-indigo-400 mb-1 sm:mb-0">Training</div>
+							<!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
+							<div class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-emerald-700 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
+								<time class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-gray-600 bg-green-100 rounded-full">May, 2023</time>
+								<div class="text-xl font-bold text-gray-200">Crisis training</div>
+							</div>
+							<!-- Content -->
+							<div class="text-gray-400">Pretium lectus quam id leo. Urna et pharetra pharetra massa massa. Adipiscing enim eu neque aliquam vestibulum morbi blandit cursus risus.</div>
+						</div>
+						
+						<!-- Item -->
+						<div class="relative pl-8 sm:pl-32 py-6 group">
+							<!-- Purple label -->
+							<div class="font-medium text-indigo-400 mb-1 sm:mb-0">Training</div>
+							<!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
+							<div class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-emerald-700 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
+								<time class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-gray-600 bg-green-100 rounded-full">May, 2023</time>
+								<div class="text-xl font-bold text-gray-200">Crisis training</div>
+							</div>
+							<!-- Content -->
+							<div class="text-gray-400">Pretium lectus quam id leo. Urna et pharetra pharetra massa massa. Adipiscing enim eu neque aliquam vestibulum morbi blandit cursus risus.</div>
+						</div>
+
+					</div>
+					<!-- End: Vertical Timeline #1 -->
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	{% comment %} <div class="p-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-full">
+		<h2 class="mb-4 text-2xl font-semibold leading-none text-gray-900 md:text-2xl dark:text-white">{{ agency.name }}</h2>	
+		<dl>
+			<dt class="mb-2 font-semibold leading-none text-gray-900 dark:text-white">Summary</dt>
+			<dd class="mb-4 font-light text-gray-500 sm:mb-5 dark:text-gray-400">{{ agency.description }}</dd>
+		</dl>
+	</div> {% endcomment %}
+
+	<div class="w-full">
+		
+		<div class="w-full mb-4 p-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+			<h5 class="mb-3 text-xl font-semibold text-gray-900 dark:text-white">
+				Connect to us
+			</h5>
+			<p class="text-sm font-normal text-gray-500 dark:text-gray-400">Map our location or connect with us using one of the methods below.</p>
+			<ul class="my-4 space-y-3">
+				<li>
+					<a href="" class="flex flex-col items-start p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-900 dark:hover:bg-gray-700 dark:text-white">
+					<span class="flex-1 whitespace-nowrap">Address</span>
+						<span class="text-sm font-medium text-gray-500 rounded dark:text-gray-400">{{ agency.address }}, {{ agency.city }}, {{ agency.state }} {{ agency.zipcode }}</span>
+					</a>
+				</li>
+				<li>
+					<a href="" class="flex flex-col items-start p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-900 dark:hover:bg-gray-700 dark:text-white">
+						<span class="flex-1 whitespace-nowrap">Phone</span>
+						<span class="items-center justify-center text-sm font-medium text-gray-500 rounded dark:text-gray-400">
+							{{ agency.phone_number }} [Main] / {{ agency.fax_number }} [Fax]
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="" class="flex flex-col items-start p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-900 dark:hover:bg-gray-700 dark:text-white">
+						<span class="flex-1 whitespace-nowrap">Website</span>
+						<span class="inline-flex items-center justify-center text-sm font-medium text-gray-500 rounded dark:text-gray-400">{{ agency.website }}</span>
+					</a>
+				</li>
+				<li>
+					<a href="" class="flex flex-col items-start p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-900 dark:hover:bg-gray-700 dark:text-white">
+						<span class="flex-1 whitespace-nowrap">Email</span>
+						<span class="inline-flex items-center justify-center text-sm font-medium text-gray-500 rounded dark:text-gray-400">{{ agency.email }}</span>
+					</a>
+				</li>
+				<li>
+					<a href="" class="flex flex-col items-start p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-900 dark:hover:bg-gray-700 dark:text-white">
+						<span class="flex-1 whitespace-nowrap">Type</span>
+						<span class="text-sm font-medium text-gray-500 dark:text-gray-400">
+							<ul class="flex flex-wrap items-center justify-start p-1">
+							{% for type in agency.display_type %}
+								<li class="px-2.5 py-0.5 rounded-full border dark:border-gray-800 text-gray-900 dark:text-gray-400 dark:bg-gray-950">{{ type.name }}</li>
+							{% endfor %}
+							</ul>
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="" class="flex flex-col items-start p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-900 dark:hover:bg-gray-700 dark:text-white">
+						<span class="flex-1 whitespace-nowrap">Tags</span>
+						<span class="text-sm font-medium text-gray-500 dark:text-gray-400">
+							<ul class="flex flex-wrap items-center justify-start p-1">
+							{% for tag in agency.display_tag %}
+								<li class="px-2.5 py-0.5 rounded-full border dark:border-gray-800 text-gray-900 dark:text-gray-400 dark:bg-gray-950">{{ tag.name }}</li>
+							{% endfor %}
+							</ul>
+						</span>
+					</a>
+				</li>
+			</ul>
+			<div>
+				<a href="" class="inline-flex items-center text-xs font-normal text-gray-500 hover:underline dark:text-gray-400">
+					<svg class="w-3 h-3 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+						<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.529 7.988a2.502 2.502 0 0 1 5 .191A2.441 2.441 0 0 1 10 10.582V12m-.01 3.008H10M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+					</svg>
+					Why do I need to connect with my wallet?
+				</a>
+			</div>
+		</div>
+
+		<div class="w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 dark:bg-gray-800 dark:border-gray-700">
+			<div class="flex items-center justify-between mb-4">
+				<h5 class="text-xl font-bold leading-none text-gray-900 dark:text-white">Provider list</h5>
+				<a href="#" class="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500">
+					View all
+				</a>
+			</div>
+			<div class="flow-root">
+				<ul role="list" class="divide-y divide-gray-200 dark:divide-gray-700">
+					<li class="py-3 sm:py-4">
+						<div class="flex items-center">
+							<div class="flex-shrink-0">
+								<img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-1.jpg" alt="Neil image">
+							</div>
+							<div class="flex-1 min-w-0 ms-4">
+								<p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+									Neil Sims
+								</p>
+								<p class="text-sm text-gray-500 truncate dark:text-gray-400">
+									email@windster.com
+								</p>
+							</div>
+							<div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+								$320
+							</div>
+						</div>
+					</li>
+					<li class="py-3 sm:py-4">
+						<div class="flex items-center ">
+							<div class="flex-shrink-0">
+								<img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-3.jpg" alt="Bonnie image">
+							</div>
+							<div class="flex-1 min-w-0 ms-4">
+								<p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+									Bonnie Green
+								</p>
+								<p class="text-sm text-gray-500 truncate dark:text-gray-400">
+									email@windster.com
+								</p>
+							</div>
+							<div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+								$3467
+							</div>
+						</div>
+					</li>
+					<li class="py-3 sm:py-4">
+						<div class="flex items-center">
+							<div class="flex-shrink-0">
+								<img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-2.jpg" alt="Michael image">
+							</div>
+							<div class="flex-1 min-w-0 ms-4">
+								<p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+									Michael Gough
+								</p>
+								<p class="text-sm text-gray-500 truncate dark:text-gray-400">
+									email@windster.com
+								</p>
+							</div>
+							<div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+								$67
+							</div>
+						</div>
+					</li>
+					<li class="py-3 sm:py-4">
+						<div class="flex items-center ">
+							<div class="flex-shrink-0">
+								<img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-4.jpg" alt="Lana image">
+							</div>
+							<div class="flex-1 min-w-0 ms-4">
+								<p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+									Lana Byrd
+								</p>
+								<p class="text-sm text-gray-500 truncate dark:text-gray-400">
+									email@windster.com
+								</p>
+							</div>
+							<div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+								$367
+							</div>
+						</div>
+					</li>
+					<li class="pt-3 pb-0 sm:pt-4">
+						<div class="flex items-center ">
+							<div class="flex-shrink-0">
+								<img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-5.jpg" alt="Thomas image">
+							</div>
+							<div class="flex-1 min-w-0 ms-4">
+								<p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+									Thomes Lean
+								</p>
+								<p class="text-sm text-gray-500 truncate dark:text-gray-400">
+									email@windster.com
+								</p>
+							</div>
+							<div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+								$2367
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock content %}
